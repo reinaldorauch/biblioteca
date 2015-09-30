@@ -1,0 +1,1 @@
+		<img src="public/images/doge.jpg" class="img-responsive img-rounded img-center">
