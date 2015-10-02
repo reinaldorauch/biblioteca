@@ -2,13 +2,13 @@
 
 require_once('/controllers/Render.php');
 
-// Determina qual página mostrar.
+// Determina qual página mostrar
 if (isset($_GET['page']))
 	$page = $_GET['page'];
 else
 	$page = 'index';
 	
-// Mostra a página.
+// Mostra a página
 $render = new Render();
 switch ($page) {
 	case 'index':

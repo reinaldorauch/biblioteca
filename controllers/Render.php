@@ -4,7 +4,6 @@
  * Renderiza um template.
  */
 class Render {
-	
 	/**
 	 * Renderiza um template.
 	 * @param string $template Template para ser renderizado.
