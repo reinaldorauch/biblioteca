@@ -2,7 +2,7 @@
 
 require_once('/controllers/Render.php');
 
-// Determina qual página para mostrar.
+// Determina qual página mostrar.
 if (isset($_GET['page']))
 	$page = $_GET['page'];
 else
