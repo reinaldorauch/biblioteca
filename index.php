@@ -16,6 +16,12 @@ switch ($page) {
 		$render::renderTemplate('views/templates/header');
 		$render::renderTemplate('views/templates/home');
 		$render::renderTemplate('views/templates/fim');
+		break;
+	case 'livros':
+		$render::renderTemplate('views/templates/head');
+		$render::renderTemplate('views/templates/header', array('titulo' => 'Livros'));
+		$render::renderTemplate('views/livros');
+		$render::renderTemplate('views/templates/fim');
 }
 
 ?>
