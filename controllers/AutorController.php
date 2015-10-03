@@ -14,8 +14,10 @@ class AutorController {
 		$autor = new Autor();
 		$render = new Render();
 		
-		$autor->nome = $_POST["nome"];
+		$autor->nome = $_POST['nome'];
 		$autor->insert();
+		
+		header("Location: ?page=autores");
 	}
 }
 
