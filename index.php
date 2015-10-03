@@ -22,6 +22,7 @@ switch ($page) {
 		$render::renderTemplate('views/templates/header', array('titulo' => 'Livros'));
 		$render::renderTemplate('views/livros');
 		$render::renderTemplate('views/templates/fim');
+		break;
 }
 
 ?>

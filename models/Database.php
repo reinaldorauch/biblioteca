@@ -22,6 +22,22 @@ class Database {
 		
 		return self::$connection;
 	}
+	
+	/**
+	 * Executa uma query no banco de dados
+	 * @param string $query String contendo a query
+	 * @return mixed O resultado da query
+	 */
+	public function query($query) {
+		// Conecta com o banco de dados
+		$connection = $this->connect();
+		
+		// Executa a query
+		$result = $connection->query($query);
+		
+		return $result;
+	}
+	
 }
 
 ?>
