@@ -16,9 +16,6 @@ class AutorController {
 		
 		$autor->nome = $_POST["nome"];
 		$autor->insert();
-		
-		// Não funciona
-		$render::renderTemplate('views/autores');
 	}
 }
 
