@@ -8,6 +8,7 @@ if (isset($_GET['page']))
 else
 	$page = 'index';
 	
+	
 // Mostra a página
 $render = new Render();
 switch ($page) {
@@ -23,6 +24,11 @@ switch ($page) {
 		$render::renderTemplate('views/livros');
 		$render::renderTemplate('views/templates/fim');
 		break;
+	case 'novo_autor':
+		$render::renderTemplate('views/templates/head');
+		$render::renderTemplate('views/templates/header', array('titulo' => 'Novo Autor'));
+		$render::renderTemplate('views/novo_autor');
+		$render::renderTemplate('views/templates/fim');
 }
 
 ?>

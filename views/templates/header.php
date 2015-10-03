@@ -18,7 +18,8 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Livros <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Livros</a></li>
-						<li><a href="#">Adicionar Livro</a></li>
+						<li><a href="?page=novo_livro">Adicionar Livro</a></li>
+						<li><a href="?page=novo_autor">Adicionar Autor</a></li>
 					</ul>
 				</li>
 			</ul>
