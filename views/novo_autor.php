@@ -9,10 +9,14 @@ $(document).on('submit', '#novo-autor', function() {
 });
 </script>-->
 
-<form id="novo-autor" action="./controllers/novo_autor.php" method="post">
-	<div class="form-group">
-		 <label for="nome">Nome</label>
-		 <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
+<div class="row">
+	<div class="col-sm-6">
+		<form id="novo-autor" action="./controllers/novo_autor.php" method="post">
+			<div class="form-group">
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
+			</div>
+			<button type="submit" class="btn btn-default">OK</button>
+		</form>
 	</div>
-	<button type="submit" class="btn btn-default">OK</button>
-</form>
+</div>
