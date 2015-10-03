@@ -11,8 +11,9 @@ class Database {
 	public function connect() {
 		// Conecta no banco de dados
 		if (!isset(self::$connection)) {
-			$config = parse_ini_file('../config/db.ini'); // Carrega as configurações do arquivo
+			$config = parse_ini_file('/config/db.ini'); // Carrega as configurações do arquivo
 			self::$connection = new mysqli('localhost', $config['username'], $config['password'], $config['dbname']);
+			self::$connection->set_charset('utf8');
         }
 		
 		// Se a conexão não foi bem sucedida
