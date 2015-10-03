@@ -11,24 +11,23 @@ else
 	
 // Mostra a página
 $render = new Render();
+
+$render::renderTemplate('views/templates/head');
+
 switch ($page) {
 	case 'index':
-		$render::renderTemplate('views/templates/head');
 		$render::renderTemplate('views/templates/header');
 		$render::renderTemplate('views/templates/home');
-		$render::renderTemplate('views/templates/fim');
 		break;
 	case 'livros':
-		$render::renderTemplate('views/templates/head');
 		$render::renderTemplate('views/templates/header', array('titulo' => 'Livros'));
 		$render::renderTemplate('views/livros');
-		$render::renderTemplate('views/templates/fim');
 		break;
-	case 'autores':
-		$render::renderTemplate('views/templates/head');
+	case 'novo_autor':
 		$render::renderTemplate('views/templates/header', array('titulo' => 'Novo Autor'));
-		$render::renderTemplate('views/autores');
-		$render::renderTemplate('views/templates/fim');
+		$render::renderTemplate('views/novo_autor');
 }
+
+$render::renderTemplate('views/templates/fim');
 
 ?>

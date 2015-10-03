@@ -19,7 +19,7 @@
 					<ul class="dropdown-menu">
 						<li><a href="#">Livros</a></li>
 						<li><a href="?page=novo_livro">Adicionar Livro</a></li>
-						<li><a href="?page=autores">Adicionar Autor</a></li>
+						<li><a href="?page=novo_autor">Adicionar Autor</a></li>
 					</ul>
 				</li>
 			</ul>

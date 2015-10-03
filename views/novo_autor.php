@@ -13,7 +13,7 @@ $(document).on('submit', '#novo-autor', function() {
 	if (isset($_POST['nome'])) {
 		$autorCont = new AutorController();
 		$autorCont->adicionarAutor();
-	}		
+	}	
 ?>
 
 <div class="row">
