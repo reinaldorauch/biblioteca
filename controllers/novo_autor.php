@@ -1,11 +1,12 @@
 <?php
 	
 require_once('../models/Database.php');
+require_once('../models/Autor.php');
 
 $db = new Database();
-$query = 'INSERT INTO autor (nome) VALUES (';
-$query .= '\'' . $_POST["nome"] . '\'';
-$query .= ');';
-$db->query($query);
+$autor = new Autor();
+
+$autor->nome = $_POST["nome"];
+$autor->insert();
 	
 ?>

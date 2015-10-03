@@ -1,4 +1,4 @@
-<script>
+<!--<script>
 $(document).on('submit', '#novo-autor', function() {
     $.post('./controllers/novo_autor.php', $(this).serialize(), function(data) {
         $(".result").html(data);
@@ -7,7 +7,7 @@ $(document).on('submit', '#novo-autor', function() {
     return false;
 
 });
-</script>
+</script>-->
 
 <form id="novo-autor" action="./controllers/novo_autor.php" method="post">
 	<div class="form-group">

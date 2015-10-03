@@ -38,6 +38,42 @@ class Database {
 		return $result;
 	}
 	
+	/**
+	 * Insere aspas na string e trata caracteres especiais
+	 * @param string $val String para ser tratada
+	 * @return string String tratada
+	 */
+	public function quote($val) {
+		$connection = $this->connect();
+		
+		return "'" . $connection->real_escape_string($val) . "'";
+	}
+	
+	/**
+	 * Insere no banco de dados
+	 * @param string $table Tabela do banco de dados
+	 * @param array $data Colunas e valores da inserção
+	 * @return mixed O resultado da query
+	 */
+	public function insert($table, $data = []) {
+		$connection = $this->connect();
+		
+		// Último valor do array
+		$last_key = end(array_keys($data));
+		
+		// Constrói a query
+		$query = 'INSERT INTO ' . $table . ' SET ';
+		foreach ($data as $key => $val) {	
+			$query .= $key . ' = ' . $val;
+			// Insere uma vírgula se não for o último elemento
+			if (!$key === $last_key)
+				$query .= ', ';
+		}
+		
+		// Insere
+		return $this->query($query);
+	}
+	
 }
 
 ?>
