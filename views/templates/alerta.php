@@ -1,4 +1,5 @@
 <?php
+
 if ((array_key_exists('tipo', $data) && (array_key_exists('msg', $data)))) {
 	switch($data['tipo']) {
 		case 'danger':
@@ -8,4 +9,5 @@ if ((array_key_exists('tipo', $data) && (array_key_exists('msg', $data)))) {
 			echo '</div>';
 	}
 }
+
 ?>
