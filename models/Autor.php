@@ -15,13 +15,12 @@ class Autor {
 		
 		$data = [];
 		
-		if (!empty($thios->id_autor))
+		if (!empty($this->id_autor))
 			$data['id_autor'] = (int) $this->id_autor;
 		if (!empty($this->nome))
 			$data['nome'] = $db->quote($this->nome);
 			
 		return $db->insert('autor', $data);
-		
 		
 	}
 	

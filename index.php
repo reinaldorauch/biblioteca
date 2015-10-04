@@ -13,19 +13,20 @@ else
 $render = new Render();
 
 $render::renderTemplate('views/templates/head');
+$render::renderTemplate('views/templates/header');
 
 switch ($page) {
 	case 'index':
-		$render::renderTemplate('views/templates/header');
 		$render::renderTemplate('views/templates/home');
 		break;
 	case 'livros':
-		$render::renderTemplate('views/templates/header', array('titulo' => 'Livros'));
 		$render::renderTemplate('views/livros');
 		break;
-	case 'novo_autor':
-		$render::renderTemplate('views/templates/header', array('titulo' => 'Novo Autor'));
-		$render::renderTemplate('views/novo_autor');
+	case 'autores':
+		require_once('/controllers/AutorController.php');
+		$autorController = new autorController();
+		$autorController->showView();
+		break;
 }
 
 $render::renderTemplate('views/templates/fim');

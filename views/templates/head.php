@@ -9,6 +9,7 @@
 	
 	<!-- Bootstrap -->
 	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+	<link href="public/css/bootstrap-theme.min.css" rel="stylesheet">
 	
 	<link href="public/css/biblioteca.css" rel="stylesheet">
 </head>

@@ -9,11 +9,11 @@ $(document).on('submit', '#novo-autor', function() {
 });
 </script>-->
 <?php
-	require_once('controllers/AutorController.php');
-	if (isset($_POST['nome'])) {
-		$autorCont = new AutorController();
-		$autorCont->adicionarAutor();
-	}	
+require_once('controllers/AutorController.php');
+if (isset($_POST['nome'])) {
+	$autorCont = new AutorController();
+	$autorCont->adicionarAutor();
+}	
 ?>
 
 <div class="row">

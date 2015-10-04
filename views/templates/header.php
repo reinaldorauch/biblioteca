@@ -14,12 +14,14 @@
 		
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
+				<li><a href="?page=livros">Livros</a></li>
+				 <li><a href="?page=autores">Autores</a></li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Livros <span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Livros</a></li>
+						<li><a href="?page=livros">Livros</a></li>
 						<li><a href="?page=novo_livro">Adicionar Livro</a></li>
-						<li><a href="?page=novo_autor">Adicionar Autor</a></li>
+						<li><a href="?page=autores&ac=novo_autor">Adicionar Autor</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -27,8 +29,3 @@
 					
 	</div>
 </div>
-
-<?php
-if (array_key_exists('titulo', $data))
-	echo '<h2>' . $data['titulo'] . '</h2>';
-?>
