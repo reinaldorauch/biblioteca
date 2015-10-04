@@ -1,7 +1,9 @@
-<h1>Biblioteca</h1>
+<div>
+	
+</div>
 
-<div class="navbar navbar-default">
-	<div class="container-fluid">
+<nav class="navbar navbar-default">
+	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
@@ -19,8 +21,6 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="?page=livros">Livros</a></li>
-						<li><a href="?page=novo_livro">Adicionar Livro</a></li>
 						<li><a href="?page=autores&ac=novo_autor">Adicionar Autor</a></li>
 					</ul>
 				</li>
@@ -28,4 +28,4 @@
 		</div>
 					
 	</div>
-</div>
+</nav>

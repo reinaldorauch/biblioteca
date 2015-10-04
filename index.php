@@ -17,9 +17,11 @@ $render::renderTemplate('views/templates/header');
 
 switch ($page) {
 	case 'index':
+		$render::renderTemplate('views/templates/container');
 		$render::renderTemplate('views/templates/home');
 		break;
 	case 'livros':
+		$render::renderTemplate('views/templates/container');
 		$render::renderTemplate('views/livros');
 		break;
 	case 'autores':
